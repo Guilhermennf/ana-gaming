@@ -45,4 +45,4 @@ Iniciar a aplicação
 npm run dev
 ```
 
-Link do deploy: -
+Link do deploy: [Ana Gaming](https://ana-gaming.vercel.app/)
