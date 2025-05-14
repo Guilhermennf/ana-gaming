@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Requisitos para a aplicação Ana Gaming
 
-## Getting Started
+É necessário seguir todos os passos abaixo para que a aplicação funcione corretamente.
 
-First, run the development server:
+### Primeiro Passo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Criar uma pasta para este projeto e clonar o repositório
+
+```
+mkdir ana-gaming
+cd ana-gaming
+git clone https://github.com/Guilhermennf/ana-gaming.git .
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Segundo passo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Instalar as dependências
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+npm install
+```
 
-## Learn More
+### Terceiro passo
 
-To learn more about Next.js, take a look at the following resources:
+Configurar as variáveis de ambiente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+NEXTAUTH_SECRET=sua_secret_aqui
+NEXTAUTH_URL=http://localhost:3000
+GITHUB_ID=seu_github_id_aqui
+GITHUB_SECRET=seu_github_secret_aqui
+NEXT_PUBLIC_ODDS_API_KEY=sua_odds_api_key_aqui
+```
 
-## Deploy on Vercel
+- Para obter o GITHUB_ID e GITHUB_SECRET, acesse [GitHub Developer Settings](https://github.com/settings/developers) e crie uma nova aplicação OAuth
+- Para obter a NEXT_PUBLIC_ODDS_API_KEY, registre-se em [The Odds API](https://the-odds-api.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Quarto passo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Iniciar a aplicação
+
+```
+npm run dev
+```
+
+Link do deploy: -
